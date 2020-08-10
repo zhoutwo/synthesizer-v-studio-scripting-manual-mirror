@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 for Linux version 5.7.16">
+<meta charset="utf-8">
+<title>Home - Synthesizer V Studio Scripting Manual</title>
+
+<script src="scripts/prettify/prettify.js"></script>
+<script src="scripts/prettify/lang-css.js"></script>
+<!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<link type="text/css" rel="stylesheet" href="styles/prettify.css">
+<link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+<script src="scripts/nav.js" defer></script>
+<meta name="viewport" content=
+"width=device-width, initial-scale=1.0">
+</head>
+<body>
+<input type="checkbox" id="nav-trigger" class="nav-trigger">
+<div class="navicon"></div>
+<nav><input type="text" id="nav-search" placeholder="Search">
+<h2><a href="index.html">Home</a></h2>
+<h2><a href="https://github.com/Dreamtonics/svstudio-scripts"
+target="_blank" class="menu-item" id="scripts_repo">Scripts
+Repository</a></h2>
+<h2><a href="https://dreamtonics.com/synthesizerv" target="_blank"
+class="menu-item" id="svstudio_site">Synthesizer V Studio
+Website</a></h2>
+<h3>Tutorials</h3>
+<ul>
+<li><a href="tutorial-A%20Minimal%20Example.html">A Minimal
+Example</a></li>
+<li><a href="tutorial-Custom%20Dialogs.html">Custom
+Dialogs</a></li>
+<li><a href="tutorial-Localization.html">Localization</a></li>
+<li><a href="tutorial-Memory%20Management.html">Memory
+Management</a></li>
+</ul>
+<h3>Classes</h3>
+<ul>
+<li><a href=
+"ArrangementSelectionState.html">ArrangementSelectionState</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementSelectionState.html#clearAll">clearAll</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementSelectionState.html#clearGroups">clearGroups</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementSelectionState.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementSelectionState.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementSelectionState.html#getSelectedGroups">getSelectedGroups</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementSelectionState.html#hasSelectedContent">hasSelectedContent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementSelectionState.html#hasSelectedGroups">hasSelectedGroups</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementSelectionState.html#hasUnfinishedEdits">hasUnfinishedEdits</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementSelectionState.html#isMemoryManaged">isMemoryManaged</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementSelectionState.html#selectGroup">selectGroup</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementSelectionState.html#unselectGroup">unselectGroup</a></li>
+</ul>
+</li>
+<li><a href="ArrangementView.html">ArrangementView</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementView.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementView.html#getNavigation">getNavigation</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementView.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementView.html#getSelection">getSelection</a></li>
+<li data-type='method' style='display: none;'><a href=
+"ArrangementView.html#isMemoryManaged">isMemoryManaged</a></li>
+</ul>
+</li>
+<li><a href="Automation.html">Automation</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#add">add</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#clone">clone</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#get">get</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#getAllPoints">getAllPoints</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#getDefinition">getDefinition</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#getInterpolationMethod">getInterpolationMethod</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#getLinear">getLinear</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#getPoints">getPoints</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#getType">getType</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#isMemoryManaged">isMemoryManaged</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#remove">remove</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#remove">remove</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#removeAll">removeAll</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Automation.html#simplify">simplify</a></li>
+</ul>
+</li>
+<li><a href="CoordinateSystem.html">CoordinateSystem</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#getTimePxPerUnit">getTimePxPerUnit</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#getTimeViewRange">getTimeViewRange</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#getValuePxPerUnit">getValuePxPerUnit</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#getValueViewRange">getValueViewRange</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#isMemoryManaged">isMemoryManaged</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#setTimeLeft">setTimeLeft</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#setTimeRight">setTimeRight</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#setTimeScale">setTimeScale</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#setValueCenter">setValueCenter</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#snap">snap</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#t2x">t2x</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#v2y">v2y</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#x2t">x2t</a></li>
+<li data-type='method' style='display: none;'><a href=
+"CoordinateSystem.html#y2v">y2v</a></li>
+</ul>
+</li>
+<li><a href="GroupSelection.html">GroupSelection</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"GroupSelection.html#clearGroups">clearGroups</a></li>
+<li data-type='method' style='display: none;'><a href=
+"GroupSelection.html#getSelectedGroups">getSelectedGroups</a></li>
+<li data-type='method' style='display: none;'><a href=
+"GroupSelection.html#hasSelectedGroups">hasSelectedGroups</a></li>
+<li data-type='method' style='display: none;'><a href=
+"GroupSelection.html#selectGroup">selectGroup</a></li>
+<li data-type='method' style='display: none;'><a href=
+"GroupSelection.html#unselectGroup">unselectGroup</a></li>
+</ul>
+</li>
+<li><a href="MainEditorView.html">MainEditorView</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"MainEditorView.html#getCurrentGroup">getCurrentGroup</a></li>
+<li data-type='method' style='display: none;'><a href=
+"MainEditorView.html#getCurrentTrack">getCurrentTrack</a></li>
+<li data-type='method' style='display: none;'><a href=
+"MainEditorView.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"MainEditorView.html#getNavigation">getNavigation</a></li>
+<li data-type='method' style='display: none;'><a href=
+"MainEditorView.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"MainEditorView.html#getSelection">getSelection</a></li>
+<li data-type='method' style='display: none;'><a href=
+"MainEditorView.html#isMemoryManaged">isMemoryManaged</a></li>
+</ul>
+</li>
+<li><a href="NestedObject.html">NestedObject</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"NestedObject.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NestedObject.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NestedObject.html#isMemoryManaged">isMemoryManaged</a></li>
+</ul>
+</li>
+<li><a href="Note.html">Note</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#clone">clone</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#getAttributes">getAttributes</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#getDuration">getDuration</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#getEnd">getEnd</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#getLyrics">getLyrics</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#getOnset">getOnset</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#getPhonemes">getPhonemes</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#getPitch">getPitch</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#isMemoryManaged">isMemoryManaged</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#setAttributes">setAttributes</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#setDuration">setDuration</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#setLyrics">setLyrics</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#setOnset">setOnset</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#setPhonemes">setPhonemes</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#setPitch">setPitch</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Note.html#setTimeRange">setTimeRange</a></li>
+</ul>
+</li>
+<li><a href="NoteGroup.html">NoteGroup</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroup.html#addNote">addNote</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroup.html#clone">clone</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroup.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroup.html#getName">getName</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroup.html#getNote">getNote</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroup.html#getNumNotes">getNumNotes</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroup.html#getParameter">getParameter</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroup.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroup.html#getUUID">getUUID</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroup.html#isMemoryManaged">isMemoryManaged</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroup.html#removeNote">removeNote</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroup.html#setName">setName</a></li>
+</ul>
+</li>
+<li><a href="NoteGroupReference.html">NoteGroupReference</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#clone">clone</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#getDuration">getDuration</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#getEnd">getEnd</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#getOnset">getOnset</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#getPitchOffset">getPitchOffset</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#getTarget">getTarget</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#getTimeOffset">getTimeOffset</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#getVoice">getVoice</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#isInstrumental">isInstrumental</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#isMain">isMain</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#isMemoryManaged">isMemoryManaged</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#setPitchOffset">setPitchOffset</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#setTarget">setTarget</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#setTimeOffset">setTimeOffset</a></li>
+<li data-type='method' style='display: none;'><a href=
+"NoteGroupReference.html#setVoice">setVoice</a></li>
+</ul>
+</li>
+<li><a href="PlaybackControl.html">PlaybackControl</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"PlaybackControl.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"PlaybackControl.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"PlaybackControl.html#getPlayhead">getPlayhead</a></li>
+<li data-type='method' style='display: none;'><a href=
+"PlaybackControl.html#getStatus">getStatus</a></li>
+<li data-type='method' style='display: none;'><a href=
+"PlaybackControl.html#isMemoryManaged">isMemoryManaged</a></li>
+<li data-type='method' style='display: none;'><a href=
+"PlaybackControl.html#loop">loop</a></li>
+<li data-type='method' style='display: none;'><a href=
+"PlaybackControl.html#pause">pause</a></li>
+<li data-type='method' style='display: none;'><a href=
+"PlaybackControl.html#play">play</a></li>
+<li data-type='method' style='display: none;'><a href=
+"PlaybackControl.html#seek">seek</a></li>
+<li data-type='method' style='display: none;'><a href=
+"PlaybackControl.html#stop">stop</a></li>
+</ul>
+</li>
+<li><a href="Project.html">Project</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#addNoteGroup">addNoteGroup</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#addTrack">addTrack</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#getDuration">getDuration</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#getFileName">getFileName</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#getNoteGroup">getNoteGroup</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#getNumNoteGroupsInLibrary">getNumNoteGroupsInLibrary</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#getNumTracks">getNumTracks</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#getTimeAxis">getTimeAxis</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#getTrack">getTrack</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#isMemoryManaged">isMemoryManaged</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#newUndoRecord">newUndoRecord</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#removeNoteGroup">removeNoteGroup</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Project.html#removeTrack">removeTrack</a></li>
+</ul>
+</li>
+<li><a href="SelectionStateBase.html">SelectionStateBase</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"SelectionStateBase.html#clearAll">clearAll</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SelectionStateBase.html#hasSelectedContent">hasSelectedContent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SelectionStateBase.html#hasUnfinishedEdits">hasUnfinishedEdits</a></li>
+</ul>
+</li>
+<li><a href="SV.html">SV</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#blackKey">blackKey</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#blick2Quarter">blick2Quarter</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#blick2Seconds">blick2Seconds</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#blickRoundDiv">blickRoundDiv</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#blickRoundTo">blickRoundTo</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#create">create</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#finish">finish</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#freq2Pitch">freq2Pitch</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#getArrangement">getArrangement</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#getHostClipboard">getHostClipboard</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#getHostInfo">getHostInfo</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#getMainEditor">getMainEditor</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#getPhonemesForGroup">getPhonemesForGroup</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#getPlayback">getPlayback</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#getProject">getProject</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#pitch2freq">pitch2freq</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#quarter2Blick">quarter2Blick</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#seconds2Blick">seconds2Blick</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#setHostClipboard">setHostClipboard</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#setTimeout">setTimeout</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#showCustomDialog">showCustomDialog</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#showCustomDialogAsync">showCustomDialogAsync</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#showInputBox">showInputBox</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#showInputBoxAsync">showInputBoxAsync</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#showMessageBox">showMessageBox</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#showMessageBoxAsync">showMessageBoxAsync</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#showOkCancelBox">showOkCancelBox</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#showOkCancelBoxAsync">showOkCancelBoxAsync</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#showYesNoCancelBox">showYesNoCancelBox</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#showYesNoCancelBoxAsync">showYesNoCancelBoxAsync</a></li>
+<li data-type='method' style='display: none;'><a href=
+"SV.html#T">T</a></li>
+</ul>
+</li>
+<li><a href="TimeAxis.html">TimeAxis</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#addMeasureMark">addMeasureMark</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#addTempoMark">addTempoMark</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#clone">clone</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#getAllMeasureMarks">getAllMeasureMarks</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#getAllTempoMarks">getAllTempoMarks</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#getBlickFromSeconds">getBlickFromSeconds</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#getMeasureAt">getMeasureAt</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#getMeasureMarkAt">getMeasureMarkAt</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#getMeasureMarkAtBlick">getMeasureMarkAtBlick</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#getSecondsFromBlick">getSecondsFromBlick</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#getTempoMarkAt">getTempoMarkAt</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#isMemoryManaged">isMemoryManaged</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#removeMeasureMark">removeMeasureMark</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TimeAxis.html#removeTempoMark">removeTempoMark</a></li>
+</ul>
+</li>
+<li><a href="Track.html">Track</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#addGroupReference">addGroupReference</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#clone">clone</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#getDisplayColor">getDisplayColor</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#getDisplayOrder">getDisplayOrder</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#getDuration">getDuration</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#getGroupReference">getGroupReference</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#getName">getName</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#getNumGroups">getNumGroups</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#isBounced">isBounced</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#isMemoryManaged">isMemoryManaged</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#removeGroupReference">removeGroupReference</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#setBounced">setBounced</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#setDisplayColor">setDisplayColor</a></li>
+<li data-type='method' style='display: none;'><a href=
+"Track.html#setName">setName</a></li>
+</ul>
+</li>
+<li><a href=
+"TrackInnerSelectionState.html">TrackInnerSelectionState</a>
+<ul class='methods'>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#clearAll">clearAll</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#clearGroups">clearGroups</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#clearNotes">clearNotes</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#getIndexInParent">getIndexInParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#getParent">getParent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#getSelectedGroups">getSelectedGroups</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#getSelectedNotes">getSelectedNotes</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#hasSelectedContent">hasSelectedContent</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#hasSelectedGroups">hasSelectedGroups</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#hasSelectedNotes">hasSelectedNotes</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#hasUnfinishedEdits">hasUnfinishedEdits</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#isMemoryManaged">isMemoryManaged</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#selectGroup">selectGroup</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#selectNote">selectNote</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#unselectGroup">unselectGroup</a></li>
+<li data-type='method' style='display: none;'><a href=
+"TrackInnerSelectionState.html#unselectNote">unselectNote</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+<div id="main">
+<section class="package"></section>
+<section class="readme usertext">
+<article>
+<h1>Synthesizer V Studio Scripting Manual</h1>
+<p><a href="index.html">English</a> | <a href=
+"ja/index.html">日本語</a></p>
+<p>Synthesizer V Studio Pro supports scripting. Users can add new
+features to the editor with their own scripts.</p>
+<p>The idea of scripting is similar to a plugin system but instead
+of loading dynamically linked objects (e.g. <code>.dll</code>),
+Synthesizer V Studio loads scripts in the source code form.
+Therefore a text editor is all what's needed for developing
+scripts. Once written, the scripts are portable across all
+platforms Synthesizer V Studio supports (Windows, Linux and
+macOS).</p>
+<h2>Supported Languages</h2>
+<ul>
+<li>JavaScript (ECMAScript 5.1, powered by <a href=
+"http://duktape.org/">Duktape</a>)</li>
+<li>Lua 5.4 (<a href="https://www.lua.org/">the official
+implementation</a>)</li>
+</ul>
+<h2>Capabilities</h2>
+<p>What is possible with scripting?</p>
+<ul>
+<li>Read, add, edit and remove
+notes/groups/parameters/tracks...</li>
+<li>Access and modify the current selection (of notes and
+groups)</li>
+<li>Navigate across the project (e.g. scroll and zoom onto a
+certain range)</li>
+<li>Control the playback</li>
+<li>Interact with the user via customizable dialogs</li>
+<li>Asynchronous callback capabilities (e.g. call <a href=
+"SV.html#setTimeout"><code>SV#setTimeout</code></a> to delay the
+execution of a function)
+<ul>
+<li>This means that a script can run in the background for as long
+as possible.</li>
+</ul>
+</li>
+</ul>
+<h2>How to get started</h2>
+<ul>
+<li>Look at the <a href="tutorial-A%20Minimal%20Example.html">A
+Minimal Example</a>.</li>
+<li>Here is <a href=
+"https://github.com/Dreamtonics/svstudio-scripts/tree/master/HelloWorld">
+a more advanced example</a>.</li>
+<li>Learn from the <a href=
+"https://github.com/Dreamtonics/svstudio-scripts/tree/master/Tests">
+test scripts</a>.</li>
+<li>If you don't understand, check the class reference.</li>
+<li>Use <a href="tutorial-Localization.html">Localization</a> in
+your scripts and go international.</li>
+<li>Advanced users: understand <a href=
+"tutorial-Memory%20Management.html">Memory Management</a>.</li>
+</ul>
+<h2>Programming Concepts</h2>
+<p>Synthesizer V Studio's scripting API is object-oriented.
+JavaScript and Lua scripts share the same API, albeit with slightly
+different calling conventions (see next section).</p>
+<p>There are two types of objects the user can interact with: data
+objects and UI state objects.</p>
+<ul>
+<li>Data objects are parts of a project that can be tracks, notes,
+parameters ..., and you may already be familiar with these if you
+have worked with similar scriptable software.</li>
+<li>UI state objects are more interesting. They are an abstraction
+of the user interface. For example, a <a href=
+"PlaybackControl.html"><code>PlaybackControl</code></a> object
+manages play, pause, loop and seek behaviors.</li>
+</ul>
+<h3>Differences from VOCALOID Job Plugins</h3>
+<p>Yamaha's VOCALOID also supports Lua scripting ("Job Plugin").
+The scripts for VOCALOID are not compatible with Synthesizer V
+Studio. The main differences are</p>
+<ul>
+<li>In Job Plugin all APIs are exposed as global function; in
+Synthesizer V Studio API the only global object is the host object
+<a href="SV.html"><code>SV</code></a> and most interactions with
+the data structure are through methods of the data types.</li>
+<li>Job Plugin API uses an event-based data model. For example,
+notes must be accessed sequentially. Synthesizer V Studio API
+provides random access to notes, parameters, groups and
+tracks.</li>
+</ul>
+<h2>Important Differences between JavaScript and Lua</h2>
+<h3>Indexing</h3>
+<p>JavaScript uses zero-based indexing and Lua uses one-based
+indexing. This also applies to the scripting API.</p>
+<p>For example, <code>NoteGroup.getNote(0)</code> in JavaScript is
+the same as <code>NoteGroup:getNote(1)</code> in Lua.</p>
+<h3>Calling methods</h3>
+<p>Object-oriented programming is prototype-based in JavaScript
+API, which means the calling convention is
+<code>Class.Method(...)</code>.</p>
+<p>The Lua API is based on metatable, and the calling convention is
+<code>Class:Method(...)</code>.</p>
+<p>However, member objects are still accessed with dot even in Lua
+(e.g. <a href="SV.html#QUARTER"><code>SV#QUARTER</code></a>).</p>
+</article>
+</section>
+</div>
+<br class="clear">
+<footer><p>Documentation generated by <a href=
+"https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a> on Thu Jul 23
+2020 13:51:59 GMT+0900 (Japan Standard Time) using the <a href=
+"https://github.com/clenemt/docdash">docdash</a> theme.</p><p>Copyright 2020 Dreamtonics Co., Ltd.</p></footer>
+<script>
+prettyPrint();
+</script> 
+<script src="scripts/polyfill.js"></script> 
+<script src="scripts/linenumber.js"></script> 
+<script src="scripts/search.js" defer></script> 
+<script src="scripts/collapse.js" defer></script>
+</body>
+</html>
